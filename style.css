@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Philosopher:wght@700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    /* background-color: rgb(246, 247, 237); */
+}
+
+nav{
+    background-color: black;
+    color: white;
+    height: 60px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 12px;
+    font-family: 'Montserrat', sans-serif;
+    background-image: linear-gradient(to right, #000000, #3f5265, #2b5876);
+
+}
+nav ul{
+    list-style-type: none;
+}
+
+.gameContainer{
+    /*background-color: rgb(255, 181, 85);*/
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+    display: grid;
+    grid-template-rows: repeat(3,10vw);
+    grid-template-columns: repeat(3,10vw);
+}
+.box{
+    border: 2px solid black;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{
+    background-color: #d7f6ff;
+}
+
+.gameInfo{
+    padding: 0 34px;
+    font-family: 'Philosopher', sans-serif;
+}
+
+.info{
+    padding-left: 10vw;
+}
+
+.imgBox img{
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+
+#reset,#new {
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 50px;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+
+    background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
+    box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+}
+#reset:hover,#new:hover {
+    background-position: 100% 0;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+#reset:focus,#new:focus {
+    outline: none;
+}
